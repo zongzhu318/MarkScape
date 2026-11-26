@@ -1,0 +1,458 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders golden sample: autoLinks 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1"><a href="https://example.org/test">https://example.org/test</a> and <a href="mailto:hello@example.org">hello@example.org</a></p>
+",
+}
+`;
+
+exports[`renders golden sample: codeFence 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<pre data-language="typescript" data-line-start="1"><code>const text = "&lt;script&gt;";
+</code></pre>",
+}
+`;
+
+exports[`renders golden sample: diagrams 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<div class="mermaid-block" data-diagram="sequenceDiagram%0AAlice-%3E%3EBob%3A%20Hello%0ABob--%3E%3EAlice%3A%20Hi%0A" data-line-start="1"><pre>sequenceDiagram
+Alice-&gt;&gt;Bob: Hello
+Bob--&gt;&gt;Alice: Hi
+</pre></div>",
+}
+`;
+
+exports[`renders golden sample: displayMath 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<div class="math-block" data-line-start="1"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>i</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:2.9291em;vertical-align:-1.2777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.113em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>",
+}
+`;
+
+exports[`renders golden sample: duplicateHeadings 1`] = `
+{
+  "frontmatter": null,
+  "headings": [
+    {
+      "id": "repeat",
+      "level": 1,
+      "line": 1,
+      "text": "Repeat",
+    },
+    {
+      "id": "repeat-1",
+      "level": 1,
+      "line": 3,
+      "text": "Repeat",
+    },
+    {
+      "id": "repeat-2",
+      "level": 1,
+      "line": 5,
+      "text": "Repeat",
+    },
+  ],
+  "html": "<h1 data-line-start="1" id="repeat">Repeat</h1>
+<h1 data-line-start="3" id="repeat-1">Repeat</h1>
+<h1 data-line-start="5" id="repeat-2">Repeat</h1>
+",
+}
+`;
+
+exports[`renders golden sample: emphasis 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1"><strong>bold</strong> <em>italic</em> <em><strong>both</strong></em> <s>deleted</s></p>
+",
+}
+`;
+
+exports[`renders golden sample: escapedMarkup 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">*not italic* # not heading &lt;script&gt;</p>
+",
+}
+`;
+
+exports[`renders golden sample: footnotes 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">A<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> and B<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>. Again<sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1:1]</a></sup>.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p data-line-start="3">First footnote. <a href="#fnref1" class="footnote-backref">↩︎</a> <a href="#fnref1:1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p data-line-start="4">Second footnote. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+",
+}
+`;
+
+exports[`renders golden sample: frontMatter 1`] = `
+{
+  "frontmatter": {
+    "tags": [
+      "one",
+      "two",
+    ],
+    "title": "Example",
+  },
+  "headings": [
+    {
+      "id": "body",
+      "level": 1,
+      "line": 6,
+      "text": "Body",
+    },
+  ],
+  "html": "<h1 data-line-start="6">Body</h1>
+",
+}
+`;
+
+exports[`renders golden sample: hardBreak 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">Line one<br>
+Line two
+Soft break</p>
+",
+}
+`;
+
+exports[`renders golden sample: headingAttributes 1`] = `
+{
+  "frontmatter": null,
+  "headings": [
+    {
+      "id": "custom",
+      "level": 1,
+      "line": 1,
+      "text": "Heading",
+    },
+  ],
+  "html": "<h1 id="custom" class="special" data-line-start="1">Heading</h1>
+<p data-line-start="3"><a href="#custom">Jump</a></p>
+",
+}
+`;
+
+exports[`renders golden sample: headings 1`] = `
+{
+  "frontmatter": null,
+  "headings": [
+    {
+      "id": "one",
+      "level": 1,
+      "line": 1,
+      "text": "One",
+    },
+    {
+      "id": "two",
+      "level": 2,
+      "line": 3,
+      "text": "Two",
+    },
+    {
+      "id": "三",
+      "level": 3,
+      "line": 5,
+      "text": "三",
+    },
+  ],
+  "html": "<h1 data-line-start="1" id="one">One</h1>
+<h2 data-line-start="3" id="two">Two</h2>
+<h3 data-line-start="5" id="三">三</h3>
+",
+}
+`;
+
+exports[`renders golden sample: horizontalRule 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">Before</p>
+<hr data-line-start="3">
+<p data-line-start="5">After</p>
+",
+}
+`;
+
+exports[`renders golden sample: images 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1"><img src="mdasset://local/%2Fworkspace%2Fassets%2Fa.png" alt="中文" title="Caption" loading="lazy"></p>
+<p data-line-start="3"><img src="mdasset://local/%2Fworkspace%2Fassets%2Funnamed.png" alt="unnamed.png" loading="lazy"></p>
+",
+}
+`;
+
+exports[`renders golden sample: indentedCode 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<pre data-line-start="1"><code>line 1
+&lt;script&gt;no execution&lt;/script&gt;
+</code></pre>
+",
+}
+`;
+
+exports[`renders golden sample: inlineCode 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">Use <code>a &lt; b</code> and <code>a \` b</code>.</p>
+",
+}
+`;
+
+exports[`renders golden sample: inlineMath 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">Inline <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^2 + y^2 = z^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.044em;">z</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> and escaped $5.</p>
+",
+}
+`;
+
+exports[`renders golden sample: malformedFrontMatter 1`] = `
+{
+  "frontmatter": null,
+  "headings": [
+    {
+      "id": "title-broken",
+      "level": 2,
+      "line": 2,
+      "text": "title: [broken",
+    },
+    {
+      "id": "body",
+      "level": 1,
+      "line": 5,
+      "text": "Body",
+    },
+  ],
+  "html": "<hr data-line-start="1">
+<h2 data-line-start="2" id="title-broken">title: [broken</h2>
+<h1 data-line-start="5">Body</h1>
+",
+}
+`;
+
+exports[`renders golden sample: malformedTable 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">| one | two
+| not a delimiter |
+| last |</p>
+",
+}
+`;
+
+exports[`renders golden sample: malicious 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1">&lt;script&gt;alert(1)&lt;/script&gt;</p>
+<p data-line-start="3">&lt;img src=x onerror="alert(1)"&gt;</p>
+<p data-line-start="5">[bad](javascript:alert(1))</p>
+",
+}
+`;
+
+exports[`renders golden sample: nestedFence 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<pre data-language="md" data-line-start="1"><code>\`\`\`js
+code
+\`\`\`
+</code></pre>",
+}
+`;
+
+exports[`renders golden sample: nestedLists 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<ul data-line-start="1">
+<li data-line-start="1">parent
+<ul data-line-start="2">
+<li data-line-start="2">child
+<ol data-line-start="3">
+<li data-line-start="3">numbered</li>
+<li data-line-start="4">another</li>
+</ol>
+</li>
+</ul>
+</li>
+<li data-line-start="5">next</li>
+</ul>
+",
+}
+`;
+
+exports[`renders golden sample: quotes 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<blockquote data-line-start="1">
+<p data-line-start="1">Quote</p>
+<blockquote data-line-start="3">
+<p data-line-start="3">Nested quote</p>
+</blockquote>
+<ul data-line-start="5">
+<li data-line-start="5">list</li>
+</ul>
+</blockquote>
+",
+}
+`;
+
+exports[`renders golden sample: references 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1"><a href="https://example.org" title="Title">one</a></p>
+<p data-line-start="3">A different paragraph.</p>
+",
+}
+`;
+
+exports[`renders golden sample: remoteImage 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<p data-line-start="1"><img src="" alt="tracking" loading="lazy"></p>
+",
+}
+`;
+
+exports[`renders golden sample: setext 1`] = `
+{
+  "frontmatter": null,
+  "headings": [
+    {
+      "id": "title",
+      "level": 1,
+      "line": 1,
+      "text": "Title",
+    },
+    {
+      "id": "subtitle",
+      "level": 2,
+      "line": 4,
+      "text": "Subtitle",
+    },
+  ],
+  "html": "<h1 data-line-start="1">Title</h1>
+<h2 data-line-start="4" id="subtitle">Subtitle</h2>
+",
+}
+`;
+
+exports[`renders golden sample: table 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<table data-line-start="1">
+<thead data-line-start="1">
+<tr data-line-start="1">
+<th style="text-align:left">Name</th>
+<th style="text-align:right">Value</th>
+</tr>
+</thead>
+<tbody data-line-start="3">
+<tr data-line-start="3">
+<td style="text-align:left">中文</td>
+<td style="text-align:right"><code>42</code></td>
+</tr>
+<tr data-line-start="4">
+<td style="text-align:left">a|b</td>
+<td style="text-align:right"><strong>bold</strong></td>
+</tr>
+</tbody>
+</table>
+",
+}
+`;
+
+exports[`renders golden sample: taskLists 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<ul class="contains-task-list" data-line-start="1">
+<li class="task-list-item enabled" data-line-start="1"><input data-task-line="1" class="task-list-item-checkbox" type="checkbox"> todo</li>
+<li class="task-list-item enabled" data-line-start="2"><input data-task-line="2" class="task-list-item-checkbox" checked="" type="checkbox"> done
+<ul class="contains-task-list" data-line-start="3">
+<li class="task-list-item enabled" data-line-start="3"><input data-task-line="3" class="task-list-item-checkbox" type="checkbox"> nested</li>
+</ul>
+</li>
+</ul>
+",
+}
+`;
+
+exports[`renders golden sample: unclosedFence 1`] = `
+{
+  "frontmatter": null,
+  "headings": [],
+  "html": "<pre data-language="js" data-line-start="1"><code>const x = 1;
+
+# Still code</code></pre>",
+}
+`;
+
+exports[`renders golden sample: unclosedMath 1`] = `
+{
+  "frontmatter": null,
+  "headings": [
+    {
+      "id": "should-stay-visible",
+      "level": 1,
+      "line": 4,
+      "text": "Should stay visible",
+    },
+  ],
+  "html": "<p data-line-start="1">$$
+not closed</p>
+<h1 data-line-start="4" id="should-stay-visible">Should stay visible</h1>
+",
+}
+`;
+
+exports[`renders golden sample: unicode 1`] = `
+{
+  "frontmatter": null,
+  "headings": [
+    {
+      "id": "中文标点",
+      "level": 1,
+      "line": 1,
+      "text": "中文，标点！",
+    },
+  ],
+  "html": "<h1 data-line-start="1" id="中文标点">中文，标点！</h1>
+<p data-line-start="3">你好 😀 café é — 日本語 한국어</p>
+",
+}
+`;

@@ -1,0 +1,192 @@
+.markdown-body {
+  color: var(--fg, #25332f);
+  background: var(--surface, #fff);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  overflow-wrap: break-word;
+}
+.markdown-body > :first-child {
+  margin-top: 0;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  color: var(--heading, #20382f);
+  line-height: 1.45;
+  font-weight: 650;
+  scroll-margin-top: 28px;
+  break-after: avoid;
+}
+.markdown-body h1 {
+  font-size: 2em;
+  letter-spacing: -0.035em;
+  margin: 0 0 1em;
+  padding-bottom: 0.55em;
+  border-bottom: 1px solid var(--border, #e7ebe8);
+}
+.markdown-body h2 {
+  font-size: 1.5em;
+  margin: 1.8em 0 0.75em;
+  letter-spacing: -0.02em;
+}
+.markdown-body h3 {
+  font-size: 1.14em;
+  margin: 1.65em 0 0.7em;
+}
+.markdown-body p {
+  margin: 0.9em 0;
+}
+.markdown-body a {
+  color: var(--accent, #36826a);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.markdown-body strong {
+  font-weight: 650;
+}
+.markdown-body blockquote {
+  margin: 1.5em 0;
+  padding: 12px 20px;
+  border-left: 3px solid var(--accent, #36826a);
+  color: var(--muted, #677970);
+  background: var(--accent-soft, #f1f7f3);
+  border-radius: 0 7px 7px 0;
+}
+.markdown-body blockquote p {
+  margin: 0.25em 0;
+}
+.markdown-body code {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 0.85em;
+  background: var(--code-bg, #f1f4f2);
+  padding: 0.18em 0.4em;
+  border-radius: 4px;
+  color: var(--code-fg, #36745c);
+}
+.markdown-body pre {
+  position: relative;
+  overflow-x: auto;
+  padding: 20px;
+  margin: 1.3em 0;
+  background: var(--code-bg, #f5f7f6);
+  border: 1px solid var(--border, #e7ebe8);
+  border-radius: 8px;
+  line-height: 1.65;
+  tab-size: 2;
+  break-inside: avoid;
+}
+.markdown-body pre[data-language]::before {
+  content: attr(data-language);
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  color: var(--muted, #8a958f);
+  font: 10px sans-serif;
+}
+.markdown-body pre code {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: none;
+  white-space: pre;
+}
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1.6em;
+}
+.markdown-body li {
+  margin: 0.35em 0;
+}
+.markdown-body .task-list-item {
+  list-style: none;
+}
+.markdown-body .task-list-item input {
+  margin-left: -1.4em;
+  margin-right: 0.65em;
+  accent-color: var(--accent, #36826a);
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.3em 0;
+  font-size: 0.92em;
+}
+.markdown-body th,
+.markdown-body td {
+  padding: 10px 14px;
+  border: 1px solid var(--border, #e2e8e4);
+  text-align: left;
+}
+.markdown-body th {
+  background: var(--panel, #f5f7f6);
+  font-weight: 600;
+}
+.markdown-body tr:nth-child(even) {
+  background: var(--subtle, #fafbfa);
+}
+.markdown-body img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.markdown-body hr {
+  height: 1px;
+  border: 0;
+  background: var(--border, #e7ebe8);
+  margin: 2em 0;
+}
+.markdown-body .math-block {
+  overflow-x: auto;
+  padding: 12px 0;
+}
+.markdown-body .mermaid-block {
+  margin: 1.5em 0;
+  text-align: center;
+  overflow-x: auto;
+}
+.markdown-body .mermaid-block svg {
+  max-width: 100%;
+  height: auto;
+}
+.markdown-body .footnotes {
+  font-size: 0.85em;
+  color: var(--muted, #6e7a74);
+}
+.markdown-body .diagram-error {
+  border: 1px dashed #b4804b;
+  padding: 12px;
+}
+[data-theme='dark'] .markdown-body pre span {
+  color: var(--shiki-dark) !important;
+}
+@media print {
+  .markdown-body {
+    background: white;
+    color: #25332f;
+    font-size: 11pt;
+  }
+  .markdown-body pre {
+    white-space: pre-wrap;
+  }
+  .markdown-body a {
+    color: #36826a;
+  }
+  .markdown-body h1,
+  .markdown-body h2,
+  .markdown-body h3 {
+    break-after: avoid;
+  }
+  .markdown-body tr,
+  .markdown-body img,
+  .markdown-body pre {
+    break-inside: avoid;
+  }
+}
